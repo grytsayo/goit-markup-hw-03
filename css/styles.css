@@ -16,6 +16,10 @@ body {
   color: var(--main-text-color);
 }
 
+ul {
+  padding: 0;
+}
+
 /*Utilities*/
 html {
   box-sizing: border-box;
@@ -28,7 +32,7 @@ html {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -67,11 +71,11 @@ address {
   padding-left: 0;
   margin: 0;
 }
-
+/*
 .section {
   padding: 0px;
 }
-
+*/
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -81,6 +85,8 @@ address {
   background-color: rgb(217, 247, 248);
 }
 
+/*Header*/
+
 .container .header-nav {
   display: flex;
   align-items: center;
@@ -89,6 +95,13 @@ address {
 .logo {
   width: 145px;
   height: 30px;
+}
+
+.header-text {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
 }
 
 .pages-nav,
@@ -116,32 +129,134 @@ address {
   padding-bottom: 32px;
 }
 
-.header {
+.section .header {
   border-bottom: 1px solid #ececec;
+  background-color: #fff;
+}
+
+.header-text:hover,
+.header-text:focus,
+.footer-address:hover,
+.footer-address:focus,
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent-color);
+}
+
+.logo-start {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.logo-end {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+}
+
+/*Hero*/
+
+.hero .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--dark-bg-text-color);
+}
+
+.hero {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--dark-background);
+  width: 1600px;
+  min-height: 600vh;
+  margin: auto;
+}
+
+.hero .hero-content {
+  width: calc(100% / 12 * 5);
+  padding-top: 200px;
 }
 
 .button-main {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /*display: flex;
-  align-items: center;
-  text-align: center;*/
   letter-spacing: 0.06em;
   color: var(--dark-bg-text-color);
   background-color: var(--accent-color);
-  cursor: pointer;
 
+  padding: 10px 32px 10px 32px;
   border: var(--accent-color);
-  width: 200px;
-  height: 50px;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .button-main:hover,
 .button-main:focus {
   background-color: #188ce8;
+}
+
+/*Our forces section*/
+
+.forces {
+  padding-top: 94px;
+  background: #fff;
+}
+
+.container .list {
+  display: flex;
+}
+
+.forces-list {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.force-1,
+.force-2,
+.force-3,
+.force-4 {
+  display: block;
+  width: calc(100% / 12 * 3);
+  margin-right: 30px;
+}
+
+.force-4 {
+  margin-right: 0;
+}
+
+/*We do section*/
+
+.we-do {
+  padding-top: 94px;
+  background: #fff;
+}
+
+.work:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-title .title {
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+/*Our team section*/
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #f5f4fa;
 }
 
 .button {
@@ -167,16 +282,7 @@ button:focus {
   letter-spacing: 0.06em;
 }
 
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--dark-bg-text-color);
-}
-
-.dark-bgc {
+.footer {
   background: var(--dark-background);
 }
 
@@ -184,12 +290,6 @@ button:focus {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
-
-.forces-list {
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
 }
 
 .team-list {
@@ -212,13 +312,6 @@ button:focus {
   line-height: 1.87;
 }
 
-.header-text {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
-}
-
 .footer-address {
   font-weight: 400;
   font-size: 14px;
@@ -235,27 +328,3 @@ button:focus {
 
 /*.link:hover,
 .link:focus,*/
-.header-text:hover,
-.header-text:focus,
-.footer-address:hover,
-.footer-address:focus,
-.footer-contacts:hover,
-.footer-contacts:focus {
-  color: var(--accent-color);
-}
-
-.logo-start {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent-color);
-}
-
-.logo-end {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: #000000;
-}
