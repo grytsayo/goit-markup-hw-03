@@ -169,7 +169,7 @@ address {
   text-align: center;
   background-color: var(--dark-background);
   width: 1600px;
-  min-height: 600vh;
+  min-height: 100vh;
   margin: auto;
 }
 
