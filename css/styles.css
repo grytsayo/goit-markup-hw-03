@@ -68,12 +68,16 @@ address {
   margin: 0;
 }
 
+.section {
+  padding: 0px;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  width: 1200px;
   background-color: rgb(217, 247, 248);
 }
 
@@ -85,12 +89,15 @@ address {
 .logo {
   width: 145px;
   height: 30px;
-  margin-right: 93px;
 }
 
 .pages-nav,
 .cont-nav {
   display: flex;
+}
+
+.pages-nav .item:first-child {
+  margin-left: 93px;
 }
 
 .cont-nav {
@@ -102,14 +109,11 @@ address {
   margin-right: 50px;
 }
 
-.pages-nav .link {
+.pages-nav .link,
+.cont-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.item {
-  background-color: #188ce8;
 }
 
 .header {
@@ -120,13 +124,19 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+  /*display: flex;
   align-items: center;
-  text-align: center;
+  text-align: center;*/
   letter-spacing: 0.06em;
   color: var(--dark-bg-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
+
+  border: var(--accent-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-main:hover,
