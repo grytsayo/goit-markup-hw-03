@@ -231,6 +231,7 @@ address {
 
 .we-do .menu-wedo {
   display: flex;
+  margin-top: 50px;
 }
 
 .we-do {
@@ -242,25 +243,17 @@ address {
   margin-right: 30px;
 }
 
-.section-title .title {
-  margin-bottom: 50px;
-  padding: 0;
-}
-
 /*Our team section*/
 
 .team .menu-team {
   display: flex;
+  margin-top: 50px;
 }
 
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
   background: var(--light-background);
-}
-
-.section-title .title {
-  padding-bottom: 50px;
 }
 
 .team-mate {
