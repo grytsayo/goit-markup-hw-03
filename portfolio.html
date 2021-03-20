@@ -16,48 +16,72 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!--header w/nav-->
-    <header>
-      <nav>
-        <!--Logo-->
-        <a class="link" href="index.html"><span class="logo-start">Web</span><span class="logo-end">Studio</span> </a>
-        <ul class="list">
-          <li><a class="link header-text" href="index.html">Студия</a></li>
-          <li><a class="link header-text" href="portfolio.html">Портфолио</a></li>
-          <li><a class="link header-text" href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul class="list">
-        <!--Contacts-->
-        <li><a class="link header-text" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link header-text" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
-    </header>
-    <main>
-      <section>
-        <h1 class="visually-hidden">Наши проекты</h1>
-        <!--section-navigation-->
-        <nav>
-          <ul class="list">
-            <li>
-              <button type="button" class="button">Все</button>
-            </li>
-            <li>
-              <button type="button" class="button">Веб-сайты</button>
-            </li>
-            <li>
-              <button type="button" class="button">Приложения</button>
-            </li>
-            <li>
-              <button type="button" class="button">Дизайн</button>
-            </li>
-            <li>
-              <button type="button" class="button">Маркетинг</button>
-            </li>
+    <header class="section header">
+      <div class="container">
+        <nav class="header-nav">
+          <!--Logo-->
+          <div class="logo">
+            <a class="link" href="index.html"
+              ><span class="logo-start">Web</span><span class="logo-end">Studio</span>
+            </a>
+          </div>
+          <!--Pages-nav-->
+          <ul class="list pages-nav">
+            <li class="item header-text"><a class="link" href="index.html">Студия</a></li>
+            <li class="item header-text"><a class="link" href="portfolio.html">Портфолио</a></li>
+            <li class="item header-text"><a class="link" href="">Контакты</a></li>
+          </ul>
+
+          <!--Cont-nav-->
+          <ul class="list cont-nav">
+            <li class="item header-text"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="item header-text"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </nav>
-        <!--Projects-->
+      </div>
+    </header>
+
+    <main>
+      <!--Portfolio navigation-->
+      <section class="folio-nav">
+        <div class="container">
+          <h1 class="visually-hidden">Наши проекты</h1>
+          <nav>
+            <ul class="list site-list">
+              <div class="item-list">
+                <li>
+                  <button type="button" class="button">Все</button>
+                </li>
+              </div>
+              <div class="item-list">
+                <li>
+                  <button type="button" class="button">Веб-сайты</button>
+                </li>
+              </div>
+              <div class="item-list">
+                <li>
+                  <button type="button" class="button">Приложения</button>
+                </li>
+              </div>
+              <div class="item-list">
+                <li>
+                  <button type="button" class="button">Дизайн</button>
+                </li>
+              </div>
+              <div class="item-list">
+                <li>
+                  <button type="button" class="button">Маркетинг</button>
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!--Projects-->
+      <section>
         <ul class="list">
           <!--Project-1-->
           <li>
@@ -117,14 +141,19 @@
       </section>
     </main>
     <!--Footer-->
-    <footer class="dark-bgc">
-      <address>
-        <ul class="list">
-          <li><a class="link footer-address" href=""> г. Киев, пр-т Леси Украинки, 26</a></li>
-          <li><a class="link footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="link footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+    <footer class="section footer">
+      <div class="container">
+        <div class="logo">
+          <a class="link" href="index.html"><span class="logo-start">Web</span><span class="logo-end">Studio</span> </a>
+        </div>
+        <address>
+          <ul class="list">
+            <li><a class="link footer-address" href=""> г. Киев, пр-т Леси Украинки, 26</a></li>
+            <li><a class="link footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

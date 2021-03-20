@@ -16,10 +16,6 @@ body {
   color: var(--main-text-color);
 }
 
-ul {
-  padding: 0;
-}
-
 /*Utilities*/
 html {
   box-sizing: border-box;
@@ -28,6 +24,11 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+button {
+  padding: 0;
+  border: 0;
 }
 
 img {
@@ -61,18 +62,13 @@ address {
   padding-left: 0;
   margin: 0;
 }
-/*
-.section {
-  padding: 0px;
-}
-*/
+
 .container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  background-color: rgb(217, 247, 248);
 }
 
 /*Header*/
@@ -202,7 +198,7 @@ address {
   background: #fff;
 }
 
-.container .list {
+.container .menu-forces {
   display: flex;
 }
 
@@ -227,6 +223,10 @@ address {
 
 /*We do section*/
 
+.we-do .menu-wedo {
+  display: flex;
+}
+
 .we-do {
   padding-top: 94px;
   background: #fff;
@@ -242,6 +242,10 @@ address {
 }
 
 /*Our team section*/
+
+.team .menu-team {
+  display: flex;
+}
 
 .team {
   padding-top: 94px;
@@ -270,6 +274,17 @@ address {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
+/*Port nav*/
+
+.folio-nav .site-list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
 .button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -278,6 +293,9 @@ address {
   line-height: 1.62;
   text-align: center;
   color: var(--title-color);
+  background-color: var(--light-background);
+  padding: 6px 22px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -287,14 +305,14 @@ button:focus {
   color: var(--dark-bg-text-color);
 }
 
+.item-list:not(:last-child):not(:last-child) {
+  margin-right: 30px;
+}
+
 .title {
   font-weight: 700;
   color: var(--title-color);
   letter-spacing: 0.06em;
-}
-
-.footer {
-  background: var(--dark-background);
 }
 
 .section-title {
@@ -321,6 +339,19 @@ button:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+}
+
+/*Footer*/
+
+.footer {
+  width: 1600px;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-background);
+}
+.footer .logo {
+  margin-bottom: 20px;
 }
 
 .footer-address {
