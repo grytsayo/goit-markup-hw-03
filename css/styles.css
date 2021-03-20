@@ -256,7 +256,7 @@ address {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background: #f5f4fa;
+  background: var(--light-background);
 }
 
 .section-title .title {
@@ -346,6 +346,7 @@ button:focus {
 
 .projects {
   background-color: #fff;
+  padding-bottom: 94px;
 }
 
 .grid {
@@ -399,6 +400,3 @@ button:focus {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-
-/*.link:hover,
-.link:focus,*/
