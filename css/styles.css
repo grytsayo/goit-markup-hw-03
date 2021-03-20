@@ -16,17 +16,30 @@ body {
   color: var(--main-text-color);
 }
 
-address {
-  font-style: normal;
+/*Utilities*/
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.list {
-  list-style: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 .visually-hidden {
@@ -38,6 +51,69 @@ address {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+address {
+  font-style: normal;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(217, 247, 248);
+}
+
+.container .header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 145px;
+  height: 30px;
+  margin-right: 93px;
+}
+
+.pages-nav,
+.cont-nav {
+  display: flex;
+}
+
+.cont-nav {
+  margin-left: auto;
+}
+
+.pages-nav .item:not(:last-child),
+.cont-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.pages-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.item {
+  background-color: #188ce8;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .button-main {
