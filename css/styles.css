@@ -201,6 +201,7 @@ address {
 
 .forces {
   padding-top: 94px;
+  padding-bottom: 94px;
   background: #fff;
 }
 
@@ -236,6 +237,7 @@ address {
 
 .we-do {
   padding-top: 94px;
+  padding-bottom: 94px;
   background: #fff;
 }
 
@@ -294,7 +296,7 @@ address {
 .folio-nav .site-list {
   display: flex;
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
   align-items: center;
   justify-content: center;
 }
@@ -378,6 +380,14 @@ button:focus {
 }
 .footer .logo {
   margin-bottom: 20px;
+}
+
+.logo-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #fff;
 }
 
 .footer-address {
