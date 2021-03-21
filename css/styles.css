@@ -312,12 +312,17 @@ address {
 
 /*Port nav*/
 
-.folio-nav .site-list {
-  display: flex;
+.projects {
+  padding-bottom: 94px;
   padding-top: 94px;
-  padding-bottom: 50px;
+  background-color: #fff;
+}
+
+.projects .site-list {
+  display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .button {
@@ -341,7 +346,7 @@ button:focus {
 }
 
 .item-list:not(:last-child):not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 .title {
@@ -357,11 +362,6 @@ button:focus {
 }
 
 /*Projects section*/
-
-.projects {
-  background-color: #fff;
-  padding-bottom: 94px;
-}
 
 .grid {
   display: flex;
@@ -380,7 +380,7 @@ button:focus {
 }
 
 .pro-name {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .projects-list {
